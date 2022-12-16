@@ -114,6 +114,8 @@ header {
 
 
 .head-contacts {
+    display: flex;
+    align-items: center;
     color: var(--seconadary-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -125,6 +127,7 @@ header {
 .head-contacts:hover,
 .head-contacts:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
     /* Герой */
@@ -217,44 +220,30 @@ header {
     width: 264px;
 }
 
+
+
 .features-icon {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 112px;
     width: 264px;
     border-radius: 4px;
     background-color: var(--section-bgc-color);
     margin-bottom: 8px;   
+    
 
-   
+    
+}
+
+.icon {
+    
+    width: 64px;
+    height: 64px;
 }
 
 
-/* .features-list::before {
-    content: '';
-    display: block;
-    height: 112px;
-    border-radius: 4px;
-    background-color: var(--section-bgc-color);
-    margin-bottom: 8px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
-.features-list:nth-child(1)::before {
-    background-image: url(../images/icon-strategy.svg);
-}
-
-.features-list:nth-child(2)::before {
-    background-image: url(../images/icon-punctuality.svg);
-}
-
-.features-list:nth-child(3)::before {
-    background-image: url(../images/icon-diligence.svg);
-}
-
-.features-list:nth-child(4)::before {
-    background-image: url(../images//icon-technologies.svg);
-} */
 
 
 
@@ -359,8 +348,17 @@ header {
 .team-sm {
     width: 40px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--accent-color);
     border-radius: 50%;
+}
+
+.icon-sm {
+    width: 16px;
+    height: 16px;
+
 }
 
 .team-card .list {
@@ -383,19 +381,34 @@ header {
     letter-spacing: 0.03em;
 }
 
-.customers-box {
-    width: 168px;
-    height: 88px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-    
-}
-
 .customers-list {
     display: flex;
     justify-content: space-between;
     
 }
+
+
+.customers-logo {
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #8E8F99;
+    
+}
+
+
+.customers-logo:hover,
+.customers-logo:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color)
+}
+
+
+
 
 
 
@@ -441,13 +454,6 @@ header {
     margin-bottom: 16px;
 }
 
-.footer-sm {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    
-}
 
 .list-sm:not(:last-child) {
     margin-right: 16px;
@@ -456,6 +462,22 @@ header {
 .footer-sm:hover,
 .footer-sm:focus {
     background-color: #31D0AA;
+}
+
+.footer-sm {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+
 }
 
 
